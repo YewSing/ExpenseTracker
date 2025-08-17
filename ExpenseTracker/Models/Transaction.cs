@@ -10,7 +10,7 @@ namespace ExpenseTracker.Models
 
         //CategoryId as foreign key
         public int CategoryId { get; set; }
-        public Category Category { get; set; }    // navigational property
+        public Category? Category { get; set; }    // navigational property
         public int Amount { get; set; }
 
         [Column(TypeName ="nvarchar(75)")]
